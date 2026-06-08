@@ -1,0 +1,29 @@
+{
+  "name": "cloud-cursor",
+  "version": "0.1.0",
+  "description": "A sample TypeScript AI agent project for learning Cursor Cloud Agents",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "prompt-forge": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "start": "node dist/cli.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["ai", "agent", "typescript", "cursor"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.3"
+  }
+}
